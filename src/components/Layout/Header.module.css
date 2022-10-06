@@ -1,0 +1,30 @@
+header {
+  width: 100%;
+}
+nav {
+  padding: 10px 60px;
+  box-shadow: 0 0 5px var(--shadow);
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.dark-mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+.dark-mode > img {
+  width: 15px;
+  margin: 5px;
+}
+
+.dark-mode span {
+  height: 1.25rem;
+  font-weight: 600;
+}

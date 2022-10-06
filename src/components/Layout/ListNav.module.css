@@ -1,0 +1,6 @@
+.bar {
+  margin: 2rem;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
