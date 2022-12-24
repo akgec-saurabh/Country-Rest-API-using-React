@@ -1,0 +1,39 @@
+@use "three-dots"
+  with($dot-width: 25px, $dot-height: 25px, $dot-color: rgb(2, 0, 122));
+
+.dot-elastic {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  color: black;
+}
+
+:root {
+  --input: hsl(0, 0%, 52%);
+  --background: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --text: hsl(200, 15%, 8%);
+  --black: #000;
+  --shadow: #bebebe;
+
+  --darkModeElement: hsl(209, 23%, 22%);
+  --darkModeBackground: hsl(207, 26%, 17%);
+  --lightModeText: hsl(200, 15%, 8%);
+  --lightModeInput: hsl(0, 0%, 52%);
+  --lightModeBackground: hsl(0, 0%, 98%);
+}
+
+.app {
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.dark {
+  background-color: var(--darkModeBackground);
+  color: white;
+  --shadow: rgba(0, 0, 0, 0.5);
+
+  .el {
+    background-color: var(--darkModeElement);
+  }
+}

@@ -1,0 +1,39 @@
+.search {
+  position: relative;
+  box-shadow: 0 0 5px var(--shadow);
+  overflow: hidden;
+  border-radius: 0.25rem;
+  height: 2.5rem;
+
+  input {
+    height: 100%;
+    width: 15rem;
+    font-size: 1rem;
+    border: 0;
+    font-family: "Nunito Sans", sans-serif;
+    outline: 0;
+    padding: 0 1rem;
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+    padding-right: 3rem;
+    color: inherit;
+
+    // margin-bottom: 8px;
+
+    &:focus::placeholder {
+      // opacity: 0;
+      display: none;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    z-index: 5;
+  }
+}

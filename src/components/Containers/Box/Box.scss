@@ -1,0 +1,46 @@
+.box {
+  height: 300px;
+  flex: 1;
+  flex-basis: 240px;
+  flex-wrap: wrap;
+  transition: transform 0.6s;
+  text-align: start;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px var(--shadow);
+  overflow: hidden;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+
+  .image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .details {
+    padding-left: 1rem;
+    background: inherit;
+
+    h3 {
+      font-weight: 600;
+      margin: 15px auto;
+      font-weight: 800;
+    }
+
+    p > span {
+      font-weight: 600;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--shadow);
+  }
+}

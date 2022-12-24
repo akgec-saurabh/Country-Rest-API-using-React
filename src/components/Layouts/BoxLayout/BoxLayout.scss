@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 0 10rem;
+  justify-content: space-between;
+  position: relative;
+
+  .center {
+    width: 100vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img {
+      margin-top: 0.5rem;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 1rem 4rem;
+  }
+  @media screen and (max-width: 900px) {
+    gap: 2.5rem;
+    padding: 0 4rem;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 0 2rem;
+  }
+}

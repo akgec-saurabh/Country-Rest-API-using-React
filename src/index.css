@@ -7,30 +7,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-:root {
-  --input: hsl(0, 0%, 52%);
-  --background: hsl(0, 0%, 98%);
-  --white: hsl(0, 0%, 100%);
-  --text: hsl(200, 15%, 8%);
-  --black: #000;
-  --shadow: #bebebe;
-}
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  overflow: scroll;
-}
-
-.input {
-  height: 2rem;
-  width: 190px;
-  font-size: 14px;
-  box-shadow: 0 0 5px #bebebe;
-  border: 0;
-  font-family: "Nunito Sans", sans-serif;
-  outline: 0;
-  border-radius: 4px;
-  padding: 1rem;
-  cursor: pointer;
-  margin-bottom: 8px;
+  color: var(--lightModeText);
 }
